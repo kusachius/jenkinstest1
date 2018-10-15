@@ -1,4 +1,4 @@
 <?php
 
-echo "from php\n";
+echo "from php 1\n";
 
