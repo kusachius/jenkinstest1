@@ -8,7 +8,7 @@ pipeline {
                 sh 'mkdir src'
                 sh 'mkdir dist'
                 sh 'ls -l'
-                path 'src'
+                dir 'src'
                 git branch: 'master',
                     credentialsId: '4ccd37ee-ad94-475c-a0ff-b545e70cbaed',
                     url: 'https://github.com/BentleySystems/pwcm-legacy.git'
