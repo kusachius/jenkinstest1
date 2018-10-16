@@ -5,8 +5,10 @@ pipeline {
     stages {
         stage('bootstrap') {
             steps {
-                deleteDir 'src'
-                deleteDir 'dist'
+                deleteDir 
+                    path: 'src'
+                deleteDir 
+                    path: 'dist'
                 sh 'mkdir src'
                 sh 'mkdir dist'
                 sh 'ls -l'
