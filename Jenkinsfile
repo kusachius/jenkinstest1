@@ -5,6 +5,8 @@ pipeline {
     stages {
         stage('bootstrap') {
             steps {
+                echo 'before create'
+                sh 'ls -l'
                 sh 'mkdir src'
                 sh 'mkdir dist'
                 sh 'ls -l'
