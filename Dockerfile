@@ -1,7 +1,5 @@
 FROM php:7.0-cli
 
-MAINTAINER Chris Fidao
-
 RUN apt-get update
 RUN apt-get install -y zip unzip curl git
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
